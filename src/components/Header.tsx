@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import applogo from '../assets/applogo.jpg';
 export default function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-black">
         <div className="container-fluid">
           <Link className="navbar-brand" href="/">
-            <Image src="/applogo.jpg" alt="applogo" width="128" height="48"/>
+            <Image src={applogo} alt="applogo" width="128" height="48"/>
           </Link>
           <div className="collapse navbar-collapse d-flex w-100 justify-content-between" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0 w-25">
